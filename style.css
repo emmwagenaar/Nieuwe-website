@@ -7,6 +7,12 @@ body {
 	font-size: 16px;
 }
 
+p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-color:black;
+  font-size: 16px;
+}
+
 h1 {
 	font-family: 'Special Elite', cursive;
 	color: #FF5A5F;
