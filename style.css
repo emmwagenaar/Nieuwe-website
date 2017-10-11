@@ -42,6 +42,81 @@ a:hover {
   color: #FF5A5F;
 }
 
+/* basic menu styles */
+.block-menu {
+  display: block;
+  background: #000;
+  border: 0px;
+  margin: 0px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.block-menu li {
+  display: inline-block;
+}
+
+.block-menu li a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-smoothing: antialiased;
+  text-transform: uppercase;
+  overflow: visible;
+  line-height: 20px;
+  font-size: 15px;
+  padding: 15px 5px;
+}
+
+/* animation domination */
+.three-d {
+  perspective: 200px;
+  transition: all .07s linear;
+  position: relative;
+  cursor: pointer;
+}
+  /* complete the animation! */
+  .three-d:hover .three-d-box, 
+  .three-d:focus .three-d-box {
+    transform: translateZ(-25px) rotateX(90deg);
+  }
+
+.three-d-box {
+  transition: all .3s ease-out;
+  transform: translatez(-25px);
+  transform-style: preserve-3d;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.front {
+  transform: rotatex(0deg) translatez(25px);
+}
+
+.back {
+  transform: rotatex(-90deg) translatez(25px);
+  color: #ffe7c4;
+}
+
+.front, .back {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  padding: 15px 10px;
+  color: white;
+  pointer-events: none;
+  box-sizing: border-box;
+}
 
 /* NAVBAR & BANNER */
 #navbar {
@@ -101,22 +176,9 @@ a:hover {
 
 /* ABOUT */
 #about {
-  padding: 30px 0;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
-.card-about {
-  padding: 50px;
-  height: 150px;
-  margin-bottom: 100px;
-}
-
-.card-about-title {
-  line-height: 90px;
-}
-
-.card-project-img {
-  background-image: url('https://unsplash.it/300/300?random');
-}
-/* PROFILE SECTION */
 
 #profile-picture {
   border-radius: 50%;
@@ -131,12 +193,28 @@ a:hover {
   padding: 40px 100px;
 }
 
+/* WHAT ELSE */
+.card-about {
+  padding: 50px;
+  height: 150px;
+  margin-bottom: 80px;
+  margin-top: 0px;
+}
+
+.card-about-title {
+  line-height: 90px;
+}
+
 /* PORTFOLIO */
 
 #projects {
   background-color: #F5F7F9;
   width: 100%;
   padding: 50px 0;
+}
+
+.card-project-img {
+  background-image: url('https://unsplash.it/300/300?random');
 }
 
 .header-title {
@@ -174,7 +252,8 @@ a:hover {
 /*CONTACT*/
 
 #contact {
-  padding: 100px 0;
+  padding-top: 65px;
+  padding-bottom: 100px;
   background-color: #D2D7DF;
   text-align: center;
   margin-top: -16px;
@@ -189,7 +268,8 @@ a:hover {
   width: 100%;
   text-align: center;
   background-color: #FF5A5F;
-  padding: 40px 0;
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 
 
