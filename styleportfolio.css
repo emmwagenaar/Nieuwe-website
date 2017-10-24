@@ -46,7 +46,6 @@ a:hover {
   text-align: right;
   position: relative;
   padding: 20px;
-
 }
 
 #banner-header {
@@ -77,7 +76,8 @@ a:hover {
 
 #banner {
   /* CHANGE THE BANNER TO YOUR PICTURE! */
-  background-image: url('images/banner2.jpg');
+  background-image: url('');
+  background-color: #D2D7DF;
   width: 100%;
   background-size: cover;
   height: 10vh;
